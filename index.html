@@ -8,6 +8,54 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    
+    <div class="page">
+        <div class="page-container-one">
+            <div class="page__heading">Checkout</div>
+            <div class="contact-information">
+                <div class="contact-information-heading">Contact information</div>
+                <label class="email-label" for="email">Email</label>
+                <input class="email" placeholder=""/>
+                <label class="phone-label" for="phone">Phone</label>
+                <input class="phone" placeholder=""/>
+            </div>
+            <div class="shipping-address">
+                <label class="full-name-label" for="full-name">Full name</label>
+                <input class="full-name" placeholder=""/>
+                <label class="address-label" for="address">Address</label>
+                <input class="address" placeholder=""/>
+                <label class="city-label" for="city">City</label>
+                <input class="city" placeholder=""/>
+                <div class="country-and-code">
+                    <label class="country-label" for="country">Country</label>
+                    <input class="country" placeholder=""/>
+                    <label class="postal-code-label" for="postal-code">Postal code</label>
+                    <input class="postal-code" placeholder=""/>
+                    <div class="save-info">
+                        <input type="checkbox"/>
+                        <div class="save-info-text">Save this information for next time</div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-continue">Continue</button>
+        </div>
+        <div class="page-container-two">
+            <div class="vintage-backbag">
+                <img src="" class="photo1"/>
+                <div class="vintage-backbag-details">
+                    <div class="vintage__heading">Vintage Backbag</div>
+                    <div class="vintage__rates">
+                        <div class="vintage__currentprice">$54.99</div>
+                        <div class="vintage__previousprice">$94.99</div>
+                    </div>
+                    <div class="quantity-container">
+                        <input type="button" value="-" class="btn-minus"/>
+                        <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
