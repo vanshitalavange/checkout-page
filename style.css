@@ -5,3 +5,61 @@ body{
     padding:0;
     box-sizing: border-box;
 }
+
+.page{
+    display:flex;
+    flex-direction: column;
+}
+.page__main{
+    display: flex;
+    flex-direction: row;
+}
+.page-container-one{
+    display: flex;
+    flex-direction: column;
+}
+.page-container-two{
+    display: flex;
+    flex-direction: column;
+}
+.contact-information{
+    display: flex;
+    flex-direction: column;
+}
+.label-input-container{
+    display: flex;
+    flex-direction: column;
+}
+.input-element{
+    display: flex;
+    flex-direction: row;
+}
+.shipping-address{
+    display: flex;
+    flex-direction: column;
+}
+.country-and-code{
+    display: flex;
+    flex-direction: row;
+}
+.save-info{
+    display: flex;
+    flex-direction: row;
+}
+.vintage-backbag,.levi-shoes{
+    display:flex;
+    flex-direction: row;
+}
+.vintage-backbag-details,.levi-shoes-details{
+    display: flex;
+    flex-direction: column;
+}
+.vintage__rates,.levi__rates{
+    display: flex;
+    flex-direction: row;
+}
+
+.shipping,.total{
+    display: flex;
+    flex-direction: row;
+}
