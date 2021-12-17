@@ -1,14 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
-
+/**  font-family:Montserrat;
+    font-weight:600;
+    font-size:
+    line-height:
+    color:
+**/
 body{
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
-
+:root{
+    --primary-color:#4E5150;
+    --secondary-color:#333333;
+    --tertiary-color:#4F4F4F;
+    --orange-color:#F2994A;
+}
 .page{
     display:flex;
     flex-direction: column;
+}
+.page__heading{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:2.25rem;
+    line-height:2.74rem;
+    color:var(--primary-color);
 }
 .page__main{
     display: flex;
@@ -18,6 +35,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 .page-container-two{
     display: flex;
     flex-direction: column;
@@ -26,9 +44,24 @@ body{
     display: flex;
     flex-direction: column;
 }
+.contact-information-heading,.shipping-address-heading{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:1.1rem;
+    line-height:1.37rem;
+    color:var(--secondary-color);
+}
 .label-input-container{
     display: flex;
     flex-direction: column;
+}
+label{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:0.75rem;
+    line-height:0.9rem;
+    color:var(--tertiary-color);
+
 }
 .input-element{
     display: flex;
@@ -46,6 +79,22 @@ body{
     display: flex;
     flex-direction: row;
 }
+.save-info-text{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:0.75rem;
+    line-height:0.9rem;
+    color:var(--tertiary-color);
+
+}
+.btn-continue{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:1rem;
+    line-height:1.25rem;
+    color:#FFFFFF;
+
+}
 .vintage-backbag,.levi-shoes{
     display:flex;
     flex-direction: row;
@@ -53,6 +102,28 @@ body{
 .vintage-backbag-details,.levi-shoes-details{
     display: flex;
     flex-direction: column;
+}
+.vintage__heading,.levi__heading{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:1rem;
+    line-height:1.25rem;
+    color:var(--primary-color);
+}
+.vintage__currentprice,.levi__currentprice{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:1rem;
+    line-height:1.25rem;
+    color:var(--orange-color);
+}
+.vintage__previousprice,.levi__previousprice{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:0.75rem;
+    line-height:0.9rem;
+    color:var(--primary-color);
+    text-decoration: line-through;
 }
 .vintage__rates,.levi__rates{
     display: flex;
@@ -62,4 +133,10 @@ body{
 .shipping,.total{
     display: flex;
     flex-direction: row;
+}
+#btn-number,#number{
+    width:20px;
+    border:none;
+
+
 }
