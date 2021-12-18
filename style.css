@@ -9,18 +9,27 @@ body{
     margin:0;
     padding:0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 :root{
     --primary-color:#4E5150;
     --secondary-color:#333333;
     --tertiary-color:#4F4F4F;
+    --gray-3:#828282;
+    --gray-5:#E0E0E0;
+    --gray-6:#F2F2F2;
     --orange-color:#F2994A;
 }
 .page{
     display:flex;
     flex-direction: column;
+    gap:4vh;
+    margin-top:3rem;
 }
 .page__heading{
+
     font-family:Montserrat;
     font-weight:600;
     font-size:2.25rem;
@@ -30,19 +39,25 @@ body{
 .page__main{
     display: flex;
     flex-direction: row;
+    gap:7vw;
 }
 .page-container-one{
     display: flex;
     flex-direction: column;
+    gap:6vh;
 }
 
 .page-container-two{
     display: flex;
     flex-direction: column;
+    gap:5.5vh;
+    background-color: var(--gray-6);
+    padding:2rem;
 }
 .contact-information{
     display: flex;
     flex-direction: column;
+    gap:2vh;
 }
 .contact-information-heading,.shipping-address-heading{
     font-family:Montserrat;
@@ -51,9 +66,15 @@ body{
     line-height:1.37rem;
     color:var(--secondary-color);
 }
+.material-icons, .material-icons-round{
+    color:var(--gray-3);
+    align-self: center;
+    margin-left:0.5rem;
+}
 .label-input-container{
     display: flex;
     flex-direction: column;
+    gap:1vh;
 }
 label{
     font-family:Montserrat;
@@ -63,21 +84,70 @@ label{
     color:var(--tertiary-color);
 
 }
+input:focus{
+    outline: none;
+    
+}
+input{
+    border:none;
+    align-self: stretch;
+}
+
+::placeholder{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:1rem;
+    line-height:1.21rem;
+    color:var(--gray-3);
+  
+}
+.full-name::placeholder{
+    color:var(--secondary-color);
+}
 .input-element{
     display: flex;
     flex-direction: row;
+    border:1px solid var(--gray-3);
+    gap:1vw;
+    border-radius:12px;
+    width:465px;
+    height:56px;
 }
 .shipping-address{
     display: flex;
     flex-direction: column;
+    gap:2vh;
 }
 .country-and-code{
     display: flex;
     flex-direction: row;
+    gap:2vw;
+}
+.country{
+    width:8rem;
+
+}
+.country-container,.postal-code-container{
+    width:220px;
+}
+.options-arrow{
+    border:none;
+    align-self: center;
+    color:var(--gray-3);
+    background-color: var(--gray-5);
+    border-radius: 4px;
+    width:21px;
+    height:21px;    
+    
+}
+
+.options-arrow:focus{
+    outline:none;
 }
 .save-info{
     display: flex;
     flex-direction: row;
+    gap:0.5vw;
 }
 .save-info-text{
     font-family:Montserrat;
@@ -85,23 +155,41 @@ label{
     font-size:0.75rem;
     line-height:0.9rem;
     color:var(--tertiary-color);
+    align-self: center;
 
 }
+input[type="checkbox"]{
+    width:21px;
+    height:21px;
+    border-radius: 4px;
+}
 .btn-continue{
+    width:10.3rem;
+    height:3.3rem;
     font-family:Montserrat;
     font-weight:600;
     font-size:1rem;
     line-height:1.25rem;
     color:#FFFFFF;
+    border-radius: 12px;
+    background-color: var(--orange-color);
+    border:none;
+    align-self: flex-end;
 
+}
+.photo1,.photo2{
+   border-radius: 12px;
+   width:11vw;
 }
 .vintage-backbag,.levi-shoes{
     display:flex;
     flex-direction: row;
+    gap:1.5vw;
 }
 .vintage-backbag-details,.levi-shoes-details{
     display: flex;
     flex-direction: column;
+    gap:2vh;
 }
 .vintage__heading,.levi__heading{
     font-family:Montserrat;
@@ -124,19 +212,47 @@ label{
     line-height:0.9rem;
     color:var(--primary-color);
     text-decoration: line-through;
+    align-self: center;
 }
 .vintage__rates,.levi__rates{
     display: flex;
     flex-direction: row;
+    gap:1vw;
+}
+
+.number::-webkit-outer-spin-button,.number::-webkit-inner-spin-button{
+    display: none;
+
 }
 
 .shipping,.total{
     display: flex;
     flex-direction: row;
 }
-#btn-number,#number{
-    width:20px;
+.quantity-container{
+    margin-top: 1.59rem;
+    display: flex;
+    flex-direction: row;
+    border:1px solid var(--gray-3);
+    border-radius: 12px;
+    width:8.3rem;
+    height:3.25rem;
+    justify-content: center;
+    align-items: center;
+    gap:1.5vw;
+}
+.number{
+    text-align: center;
+    width:1rem;
+    color:var(--secondary-color);
+    font-family: Montserrat;
+    font-size:1rem;
+    background-color: var(--gray-6);
+}
+.btn-plus,.btn-minus{
     border:none;
-
-
+    color:var(--gray-3);
+    background-color: var(--gray-5);
+    border-radius: 4px;
+    margin-left:0;
 }
