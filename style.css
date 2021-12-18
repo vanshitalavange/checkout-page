@@ -21,6 +21,7 @@ body{
     --gray-5:#E0E0E0;
     --gray-6:#F2F2F2;
     --orange-color:#F2994A;
+    --gray-4:#BDBDBD;
 }
 .page{
     display:flex;
@@ -53,6 +54,8 @@ body{
     gap:5.5vh;
     background-color: var(--gray-6);
     padding:2rem;
+    border-radius: 12px;
+    height: fit-content;
 }
 .contact-information{
     display: flex;
@@ -110,8 +113,10 @@ input{
     border:1px solid var(--gray-3);
     gap:1vw;
     border-radius:12px;
-    width:465px;
-    height:56px;
+    /* width:465px; */
+    width:36.32vw;
+    /* height:56px; */
+    height:9.84vh;
 }
 .shipping-address{
     display: flex;
@@ -124,11 +129,16 @@ input{
     gap:2vw;
 }
 .country{
-    width:8rem;
+    width:10vw;
+    margin-right:1vw;
 
 }
 .country-container,.postal-code-container{
-    width:220px;
+    width:17.18vw;
+}
+.country-container{
+    gap:0;
+    justify-content: space-around;
 }
 .options-arrow{
     border:none;
@@ -137,7 +147,7 @@ input{
     background-color: var(--gray-5);
     border-radius: 4px;
     width:21px;
-    height:21px;    
+    height:21px;  
     
 }
 
@@ -178,18 +188,20 @@ input[type="checkbox"]{
 
 }
 .photo1,.photo2{
-   border-radius: 12px;
+   border-radius: 13px;
    width:11vw;
+   height:25vh;
 }
 .vintage-backbag,.levi-shoes{
     display:flex;
     flex-direction: row;
     gap:1.5vw;
+
 }
 .vintage-backbag-details,.levi-shoes-details{
     display: flex;
     flex-direction: column;
-    gap:2vh;
+    gap:1.5vh;
 }
 .vintage__heading,.levi__heading{
     font-family:Montserrat;
@@ -224,22 +236,52 @@ input[type="checkbox"]{
     display: none;
 
 }
-
+.shipping{
+    margin-top:3rem;
+}
 .shipping,.total{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    border-top:1.5px solid var(--gray-4);
+    border-bottom:1.5px solid var(--gray-4);
+    padding:0.8rem 0;
+    border-left:none;
+    border-right:none;
+}
+.total{
+    border-top:none;
+    border-bottom:none;
+}
+.shipping-text,.total-text{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:1.1rem;
+    line-height:1.3rem;
+    color:var(--secondary-color);
+}
+.shipping-price,.total-price{
+    align-self: center;
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:0.8rem;
+    line-height:1rem;
+    color:var(--secondary-color);
+
 }
 .quantity-container{
-    margin-top: 1.59rem;
     display: flex;
     flex-direction: row;
     border:1px solid var(--gray-3);
     border-radius: 12px;
-    width:8.3rem;
-    height:3.25rem;
+    /* width:8.3rem;
+    height:3.25rem; */
+    padding:1rem;
     justify-content: center;
     align-items: center;
     gap:1.5vw;
+
+
 }
 .number{
     text-align: center;
