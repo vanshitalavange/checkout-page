@@ -320,7 +320,7 @@ input[type="checkbox"]{
 
 @media (max-width:480px){
     .page{
-        
+       margin-top:2rem; 
     }
     .page__main{
         margin-left: 0.7rem;
@@ -340,7 +340,7 @@ input[type="checkbox"]{
     }
     .country-container,.postal-code-container{
         
-        width:45vw;
+    width:46vw;
         gap:1.5vw; 
     }
     ::placeholder{
@@ -352,10 +352,10 @@ input[type="checkbox"]{
         align-self: center;
     }
     .country{
-        width:6.4em;
+        width:23vw;
    }
    .country-and-code{
-       gap:5.5vw;
+       gap:4vw;
    }
    .postal-code{
        width:8.5em;
