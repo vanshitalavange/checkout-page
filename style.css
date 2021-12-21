@@ -67,7 +67,7 @@ body{
 .material-icons, .material-icons-round{
     color:var(--gray-3);
     align-self: center;
-    margin-left:0.5rem;
+    margin-left:0.2rem; 
 }
 .label-input-container{
     display: flex;
@@ -108,10 +108,8 @@ input{
     border:1px solid var(--gray-3);
     gap:1vw;
     border-radius:12px;
-    /* width:465px; */
-    width:36.32vw;
-    /* height:56px; */
-    height:9.84vh;
+    padding:1rem 0.5rem;
+    
 }
 .shipping-address{
     display: flex;
@@ -121,25 +119,23 @@ input{
 .country-and-code{
     display: flex;
     flex-direction: row;
-    gap:2vw;
+    gap:2rem;
 }
 .country{
-    width:10vw;
-    margin-right:1vw;
+     width:9em;
+    
+}
 
-}
+
 .country-container,.postal-code-container{
-    width:17.18vw;
+   
+    gap:0.3rem; 
 }
-.country-container{
-    gap:0.5;
-}
+
 .country-and-option-flex{
-    align-self: center;
-    width:100%;
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    
 }
 .options-arrow{
     border:none;
@@ -147,9 +143,7 @@ input{
     color:var(--gray-3);
     background-color: var(--gray-5);
     border-radius: 4px;
-    width:21px;
-    height:21px;  
-    
+    margin-left:20px;
 }
 
 .options-arrow:focus{
@@ -203,6 +197,7 @@ input[type="checkbox"]{
     display: flex;
     flex-direction: column;
     gap:1.5vh;
+    width:100%;
 }
 .rates-and-quantity-container{
     display: flex;
@@ -276,22 +271,10 @@ input[type="checkbox"]{
     color:var(--secondary-color);
 
 }
-.quantity-container{
-    display: flex;
-    flex-direction: row;
-    border:1px solid var(--gray-3);
-    border-radius: 12px;
-    /* width:8.3rem;
-    height:3.25rem; */
-    padding:1rem;
-    justify-content: center;
-    align-items: center;
-    gap:1.5vw;
 
 
-}
 .number{
-    text-align: center;
+     text-align: center;
     width:1rem;
     color:var(--secondary-color);
     font-family: Montserrat;
@@ -300,11 +283,12 @@ input[type="checkbox"]{
 }
 .btn-plus,.btn-minus{
     border:none;
-    color:var(--gray-3);
+    color:var(--gray-3); 
     background-color: var(--gray-5);
     border-radius: 4px;
-    margin-left:0;
+    margin-left:0; 
 }
+
 .page__footer{
     margin-top:8vh;
     margin-bottom: 1rem;
@@ -318,4 +302,159 @@ input[type="checkbox"]{
 .page__footer a{
     font-weight:700;
     color:var(--gray-4);
+}
+
+.quantity-container{
+    display: flex;
+    flex-direction: row;
+    border:1px solid var(--gray-3);
+    border-radius: 12px; 
+      padding:0.7rem 0.5rem;
+    justify-content: center; 
+    align-items: center;
+    gap:1.5vw;
+
+
+}
+
+@media (max-width:480px){
+    .page{
+        
+    }
+    .page__main{
+        margin-left: 0.7rem;
+        flex-wrap: wrap-reverse;
+        margin-right: 0.7rem;
+    }
+    .page__heading{
+        /* width:100% */
+        width:fit-content;
+        margin-left: 1rem;
+    }
+    .input-element{
+      
+    padding:0.5rem 0rem;
+        gap:2.5vw;
+  
+    }
+    .country-container,.postal-code-container{
+        
+        width:45vw;
+        gap:1.5vw; 
+    }
+    ::placeholder{
+        font-size:0.75rem;
+    line-height:0.9rem;
+    }
+    .material-icons, .material-icons-round{
+        color:var(--gray-3);
+        align-self: center;
+    }
+    .country{
+        width:6.4em;
+   }
+   .country-and-code{
+       gap:5.5vw;
+   }
+   .postal-code{
+       width:8.5em;
+   }
+   .save-info{
+    display: flex;
+    flex-direction: row;
+    gap:0.5vw;
+}
+.save-info-text{
+    font: size 0.6rem;
+    line-height:0.75rem;
+
+}
+input[type="checkbox"]{
+    width: 16px;
+    height:15px;
+}
+   
+.photo1,.photo2{
+    width:35vw;
+    height:17vh;
+ }
+ 
+.vintage-backbag,.levi-shoes{
+    display:flex;
+    flex-direction: row;
+    gap:5vw;
+
+}
+.vintage-backbag-details,.levi-shoes-details{
+    display: flex;
+    flex-direction: column;
+    gap:1.5vh;
+    width:100%;
+}
+.rates-and-quantity-container{
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    justify-content: space-between;
+}
+.vintage__heading,.levi__heading{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:0.75rem;
+    line-height:0.9rem;
+    color:var(--primary-color);
+}
+.vintage__currentprice,.levi__currentprice{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:0.8rem;
+    line-height:1rem;
+    color:var(--orange-color);
+}
+.vintage__previousprice,.levi__previousprice{
+    font-family:Montserrat;
+    font-weight:600;
+    font-size:0.6rem;
+    line-height:0.75rem;
+    color:var(--primary-color);
+    text-decoration: line-through;
+    align-self: center;
+}
+.vintage__rates,.levi__rates{
+    display: flex;
+    flex-direction: row;
+    gap:4vw;
+}
+
+
+.page__footer{
+ 
+    font-size:0.8rem;
+    line-height:1rem;
+   
+}
+
+.quantity-container{
+     width:80%; 
+    display: flex;
+    flex-direction: row;
+    border:1px solid var(--gray-3);
+    border-radius: 12px;
+    
+      padding:0.8rem 0rem;
+    
+    justify-content: center; 
+    align-items: center;
+    gap:4vw;
+
+
+}
+.page-container-two{
+    width:100%;
+}
+.page-container-one{
+    width:100%;
+}
+
+
 }
