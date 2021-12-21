@@ -313,6 +313,7 @@ input[type="checkbox"]{
     justify-content: center; 
     align-items: center;
     gap:1.5vw;
+    width:90%;
 
 
 }
